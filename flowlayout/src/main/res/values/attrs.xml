@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TagFlowLayout">
+        <!--多选模式 最多选择个数-->
+        <attr name="max_select" format="integer" />
+        <!--选择模式 单选 or 多选-->
+        <attr name="select_mode">
+            <enum name="checkbox" value="-1" />
+            <enum name="radio" value="0" />
+        </attr>
+        <!--tag显示位置 左中右-->
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
