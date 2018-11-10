@@ -6,7 +6,7 @@
 
 ####原项目地址
 
-1. https://github.com/hongyangAndroid/FlowLayout
+https://github.com/hongyangAndroid/FlowLayout
 
 ####扩展功能
 
@@ -20,20 +20,23 @@
       </attr>
       
 4. 扩展功能单选使用方式：直接声明 选择模式即可
+   
     布局中：
-    <com.zhy.view.flowlayout.TagFlowLayout
-        android:id="@+id/tag_flow_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tv_cycle_name"
-        android:layout_gravity="top"
-        android:layout_marginLeft="@dimen/dp15"
-        android:layout_marginRight="@dimen/dp15"
-        zhy:max_select="1"
-        zhy:select_mode="radio" />
+        
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/tag_flow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cycle_name"
+            android:layout_gravity="top"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            zhy:max_select="1"
+            zhy:select_mode="radio" />
     
      
-    adapter需要手动去声明选中和未选中的样式（类似参考下边）
+   adapter需要手动去声明选中和未选中的样式（类似参考下边）
+      
       adapter = new TagAdapter<BidiEntity>(list) {
                 @Override
                 public void onSelected(int position, View view) {
