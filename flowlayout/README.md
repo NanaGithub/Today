@@ -23,28 +23,29 @@ https://github.com/hongyangAndroid/FlowLayout
    
     布局中：
         
-        <com.zhy.view.flowlayout.TagFlowLayout
-            android:id="@+id/tag_flow_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_cycle_name"
-            android:layout_gravity="top"
-            android:layout_marginLeft="@dimen/dp15"
-            android:layout_marginRight="@dimen/dp15"
-            zhy:max_select="1"
-            zhy:select_mode="radio" />
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/tag_flow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_cycle_name"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                zhy:max_select="1"
+                zhy:select_mode="radio" />
     
      
    adapter需要手动去声明选中和未选中的样式（类似参考下边）
       
-      adapter = new TagAdapter<BidiEntity>(list) {
+            adapter = new TagAdapter<BidiEntity>(list) {
+            
                 @Override
                 public void onSelected(int position, View view) {
                     super.onSelected(position, view);
                     ((TextView) view).setBackground(context.getResources().getDrawable(R.drawable.shape_solid_red_10));
                     ((TextView) view).setTextColor(context.getResources().getColor(R.color.colorWhite));
                 }
-    
+            
                 @Override
                 public void unSelected(int position, View view) {
                     super.unSelected(position, view);
