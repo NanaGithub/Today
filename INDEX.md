@@ -1,9 +1,12 @@
 ####开发工具
-JDK，AndroidStudio，Git
+1.  JDK
+2.  AndroidStudio
+3.  Git
 
 ####辅助工具
 1.  谷歌浏览器（记录常用网站等）
 2.  有道云笔记，有道云词典
 
 ####交流工具
-QQ，微信
+1.  QQ
+2.  微信
