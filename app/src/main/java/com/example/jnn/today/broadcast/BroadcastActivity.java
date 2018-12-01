@@ -1,4 +1,4 @@
-package com.example.jnn.today;
+package com.example.jnn.today.broadcast;
 
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -7,9 +7,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.jnn.today.R;
 import com.example.jnn.today.broadcast.NetBroadcastReceiver;
 
-public class MainActivity extends AppCompatActivity {
+/**
+ * 广播测试Activity
+ */
+public class BroadcastActivity extends AppCompatActivity {
 
     private NetBroadcastReceiver receiver;
 
