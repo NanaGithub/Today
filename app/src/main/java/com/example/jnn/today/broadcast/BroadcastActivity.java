@@ -41,7 +41,7 @@ public class BroadcastActivity extends AppCompatActivity {
 
     /**
      * 发送广播
-     *
+     * 疑问：系统广播不可以注册吗？
      * @param view
      */
     public void sendBroadcast(View view) {

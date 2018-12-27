@@ -5,18 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".broadcast.BroadcastActivity">
+    tools:context=".service.ServiceActivity">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="registerBroadcast"
-        android:text="注册网络监听广播" />
-
+        android:onClick="start"
+        android:text="start service" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="sendBroadcast"
-        android:text="发送一个广播" />
+        android:onClick="close"
+        android:text="stop service" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="bind"
+        android:text="bind service" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="unbind"
+        android:text="unbind service" />
 </LinearLayout>
