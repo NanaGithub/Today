@@ -6,7 +6,8 @@ import android.os.Bundle;
 
 
 public class BaseApplication extends Application {
-    private int count = 0; //随着activity的显示和隐藏 值不断变化 每次都是0 1
+    //随着activity的显示和隐藏 值不断变化 每次都是0 1
+    private int count = 0;
 
     @Override
     public void onCreate() {

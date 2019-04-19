@@ -76,7 +76,9 @@ public abstract class BaseActivity extends AppCompatActivity {
         return true;
     }
 
-    //按两次退出应用
+    /**
+     * 按两次退出应用
+     */
     private long exitTime = 0;
 
     protected void exitApp() {
