@@ -8,4 +8,22 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--日间模式-->
+    <style name="ThemeActivityLight" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="pageBackground">@android:color/white</item>
+        <item name="txtColor">@android:color/black</item>
+    </style>
+    <!--夜间模式-->
+    <style name="ThemeActivityNight" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_orange</item>
+        <item name="colorPrimaryDark">@color/color_orange</item>
+        <item name="colorAccent">@color/color_orange</item>
+        <item name="pageBackground">@color/color_orange</item>
+        <item name="txtColor">@color/white</item>
+    </style>
 </resources>

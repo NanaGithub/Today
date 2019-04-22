@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/pageBackground"
+    android:orientation="vertical"
+    tools:context=".activity.ThemeActivity">
+
+    <Button
+        android:id="@+id/btn_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="?attr/pageBackground"
+        android:onClick="switchTheme"
+        android:text="切换主题"
+        android:textColor="?attr/txtColor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp45"
+        android:text="今天比昨天更漂亮"
+        android:textColor="?attr/txtColor"
+        android:textSize="@dimen/sp21" />
+
+    <ImageView
+        android:id="@+id/iv_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp20"
+        android:src="@drawable/ic_theme_weixiao_light" />
+</LinearLayout>
