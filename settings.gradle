@@ -1,4 +1,4 @@
 include ':app',
         'library_flowlayout',
         'library_calendarview',
-        'library_common'
+        'base'

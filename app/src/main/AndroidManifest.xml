@@ -24,25 +24,28 @@
             android:exported="true" />
         <!-- activity -->
         <activity android:name=".activity.BActivity" />
-        <activity android:name=".activity.AActivity"></activity>
-        <activity android:name=".sqlite.SQLiteActivity">
+        <activity android:name=".activity.AActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".sqlite.SQLiteActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <!-- 主页面 -->
         <activity
             android:name=".activity.ThemeActivity"
             android:exported="true"
-            android:theme="@style/ThemeActivityLight">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/ThemeActivityLight"></activity>
+        <activity android:name=".retrofit.RetrofitActivity"></activity>
     </application>
 
 </manifest>

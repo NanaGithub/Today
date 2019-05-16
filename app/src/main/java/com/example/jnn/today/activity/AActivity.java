@@ -2,6 +2,7 @@ package com.example.jnn.today.activity;
 
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +12,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.jnn.today.R;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AActivity extends AppCompatActivity {
     private static final String TAG = AActivity.class.getSimpleName();
@@ -22,6 +27,7 @@ public class AActivity extends AppCompatActivity {
         setContentView(R.layout.activity_a);
         Log.e(TAG, "onCreate");
         etText = findViewById(R.id.et_text);
+
     }
 
     @Override
@@ -105,6 +111,10 @@ public class AActivity extends AppCompatActivity {
     }
 
     public void jumpToB(View view) {
-        startActivityForResult(new Intent(AActivity.this, BActivity.class), 1);
+        //startActivityForResult(new Intent(AActivity.this, BActivity.class), 1);
+        Intent intent = new Intent(AActivity.this, BActivity.class);
+        byte[] bytes = new byte[1024 * 1024];
+        intent.putExtra("key", bytes);
+        startActivity(intent);
     }
 }
