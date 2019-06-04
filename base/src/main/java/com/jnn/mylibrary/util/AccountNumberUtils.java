@@ -12,7 +12,8 @@ public class AccountNumberUtils {
 
     public static String hideAlipayAccount(String account) {
         boolean isPhoneNumber = !account.contains("@");
-        if (isPhoneNumber) {//电话号码
+        if (isPhoneNumber) {
+            //电话号码
             int length = account.length();
             account = account.substring(0, length - 8) + "****" + account.substring(length - 8, length - 4);
         } else {//邮箱号码

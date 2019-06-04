@@ -3,4 +3,9 @@
     <attr name="pageBackground" format="color" />
     <attr name="btnBg" format="color" />
     <attr name="txtColor" format="color" />
+
+    <!--自定义View-->
+    <declare-styleable name="OneView">
+        <attr name="defSize" format="dimension" />
+    </declare-styleable>
 </resources>

@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.example.jnn.today.R;
 
 import java.io.Serializable;
@@ -111,10 +112,12 @@ public class AActivity extends AppCompatActivity {
     }
 
     public void jumpToB(View view) {
-        //startActivityForResult(new Intent(AActivity.this, BActivity.class), 1);
+     /*   //startActivityForResult(new Intent(AActivity.this, BActivity.class), 1);
         Intent intent = new Intent(AActivity.this, BActivity.class);
         byte[] bytes = new byte[1024 * 1024];
         intent.putExtra("key", bytes);
-        startActivity(intent);
+        startActivity(intent);*/
+
+        ARouter.getInstance().build("/main/main").navigation();
     }
 }
