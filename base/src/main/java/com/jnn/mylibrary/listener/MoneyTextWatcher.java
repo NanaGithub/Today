@@ -25,12 +25,14 @@ public class MoneyTextWatcher implements TextWatcher {
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
         if (s.toString().contains(".")) {
-            if (s.length() - 1 - s.toString().indexOf(".") > 2) {//小数点后两位
+            if (s.length() - 1 - s.toString().indexOf(".") > 2) {
+                //小数点后两位
                 s = s.toString().substring(0, s.toString().indexOf(".") + 3);
                 etMoney.setText(s);
                 etMoney.setSelection(s.length());
             }
-            if (s.toString().trim().substring(0).equals(".")) {//输入“.”后自动前面加“0”
+            if (s.toString().trim().substring(0).equals(".")) {
+                //输入“.”后自动前面加“0”
                 s = "0" + s;
                 etMoney.setText(s);
                 etMoney.setSelection(s.length());
@@ -42,7 +44,8 @@ public class MoneyTextWatcher implements TextWatcher {
                     etMoney.setSelection(1);
                 }
             }
-            if (s.toString().substring(s.toString().indexOf(".") + 1).contains(".")) {//输入多个点的时候
+            if (s.toString().substring(s.toString().indexOf(".") + 1).contains(".")) {
+                //输入多个点的时候
                 s = s.toString().substring(0, s.toString().indexOf(".") + 1);
                 etMoney.setText(s);
                 etMoney.setSelection(s.length());
@@ -56,7 +59,8 @@ public class MoneyTextWatcher implements TextWatcher {
 
     @Override
     public void afterTextChanged(Editable s) {
-        if (s.toString().trim().substring(0).equals("00")) {//输入“0”后自动前面加“.”
+        if (s.toString().trim().substring(0).equals("00")) {
+            //输入“0”后自动前面加“.”
             etMoney.setText("0.");
             etMoney.setSelection(2);
         }

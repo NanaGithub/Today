@@ -20,10 +20,10 @@
     <!--夜间模式-->
     <style name="ThemeActivityNight" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/color_orange</item>
-        <item name="colorPrimaryDark">@color/color_orange</item>
-        <item name="colorAccent">@color/color_orange</item>
-        <item name="pageBackground">@color/color_orange</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="pageBackground">@color/colorPrimary</item>
         <item name="txtColor">@color/white</item>
     </style>
 </resources>

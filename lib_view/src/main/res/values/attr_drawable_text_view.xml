@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TextView可指定drawable 的大小 -->
+    <declare-styleable name="DrawableTextView">
+        <!--android自带属性-->
+        <attr name="android:drawableLeft" />
+        <attr name="android:drawableRight" />
+        <attr name="android:drawableTop" />
+        <attr name="android:drawableBottom" />
+        <!--自定义属性，图片宽高-->
+        <attr name="drawableWidth" format="dimension" />
+        <attr name="drawableHeight" format="dimension" />
+    </declare-styleable>
+</resources>
