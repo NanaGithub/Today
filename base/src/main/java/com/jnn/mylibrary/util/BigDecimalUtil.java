@@ -1,7 +1,5 @@
 package com.jnn.mylibrary.util;
 
-import android.text.TextUtils;
-
 import java.math.BigDecimal;
 
 /**
@@ -11,7 +9,8 @@ import java.math.BigDecimal;
  */
 public final class BigDecimalUtil {
 
-    private static final int DEF_DIV_SCALE = 10; //默认除法运算精度
+    //默认除法运算精度
+    private static final int DEF_DIV_SCALE = 10;
 
     /**
      * 提供精确的加法运算。
