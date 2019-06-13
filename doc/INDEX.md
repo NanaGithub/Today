@@ -50,16 +50,29 @@
 
 ### 获取应用签名
 
-综合在AS中获取最简洁，一下操作，直接在AS中控制台「Terminal」中操作
+需求场景：三方平台（微信分享、高德地图等）应用注册时，需要填写包名和签名。
 
-* 第一步：切换到你存放xxx.jks的目录
+方式一：通过AS直接获取，最快捷，最推荐。
 
-* 第二步：输入命令回车
+* 打开AS——>点击右侧的Gradle——>点击app——>Tasks——>android——>singingReport——>控制台查看签名「MD5值需将冒号去掉，大写转换为小写」
+
+* 第一次编译会慢很多，默认打印debug，打印release需要配置。
+
+方式二：通过命令获取，在控制台输入命令，需要记命令，麻烦。
+
+* 第一步：切换到你存放 xxx.jks 的目录
+
+* 第二步：输入以下命令回车
    ```
    keytool -list -v -keystore xxx.jks 
    ```
 * 第三步：输入秘钥口令「也就是密码」
 
 * 成功后，取 MD5值，类似的三方平台所需要的签名就是该 MD5值，需要注意的就是 将 冒号去掉 并 大写转换为小写
+
+方式三：通过代码获取，快捷方便，推荐。
+
+[点击查看工具类](https://github.com/NanaGithub/Today/blob/master/base/src/main/java/com/jnn/mylibrary/util/AppSigning.java)
+
 
 
