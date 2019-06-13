@@ -64,5 +64,5 @@
 
 方式二：直接通过代码获取，快捷方便，推荐。
 
-[点击点在工具类](https://github.com/NanaGithub/Today/blob/master/base/src/main/java/com/jnn/mylibrary/util/AppSigning.java)
+[点击下载工具类](https://github.com/NanaGithub/Today/blob/master/base/src/main/java/com/jnn/mylibrary/util/AppSigning.java)
 
