@@ -30,11 +30,14 @@
 * App加固签名
 
 
-## AS智能配置
+
+## 其他
+
 ### MD编辑器
 *  Preference——>Plugins——>搜索 "Markdown"——>选择 Markdown
    Navigator「预览插件」
   
+
 ### AS中创建一个JAVA可运行项目
 *  File—>New—>Module—>Java Library
 *  点开MyClass类，添加入口 
@@ -44,4 +47,8 @@
     }
     ```
 * 右击MyClass文件，选择 Run ‘MyClass.main()’;
+
+### 获取应用签名
+
+
 
