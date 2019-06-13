@@ -50,7 +50,7 @@
 
 ### 获取应用签名
 
-综合在AS中获取最简洁，一下操作，直接在AS中控制台「Terminal」中操作
+方式一：通过命令获取，直接在AS中控制台「Terminal」/ 控制台 中操作，还得记命令，麻烦。
 
 * 第一步：切换到你存放xxx.jks的目录
 
@@ -62,4 +62,7 @@
 
 * 成功后，取 MD5值，类似的三方平台所需要的签名就是该 MD5值，需要注意的就是 将 冒号去掉 并 大写转换为小写
 
+方式二：直接通过代码获取，快捷方便，推荐。
+
+[点击点在工具类](https://github.com/NanaGithub/Today/blob/master/base/src/main/java/com/jnn/mylibrary/util/AppSigning.java)
 
