@@ -1,5 +1,7 @@
 package com.jnn.mylibrary.util;
 
+import android.app.Activity;
+import android.content.Context;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.Spanned;
@@ -7,6 +9,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
 import java.util.regex.Matcher;
@@ -19,30 +22,95 @@ import java.util.regex.Pattern;
 public class EditViewUtil {
     private static final String TAG = "EditViewUtil";
 
-    //获取焦点 弹出键盘
+    /**
+     * 获取焦点
+     */
     public static void openFocus(EditText et) {
-        et.setCursorVisible(true);
         et.setFocusable(true);
         et.setFocusableInTouchMode(true);
+        //必须加这句才能重新获取焦点
         et.requestFocus();
-        et.findFocus();
     }
 
-    //关闭焦点 关闭键盘
+    /**
+     * 关闭焦点
+     */
     public static void closeFocus(EditText et) {
-        et.setCursorVisible(false);
         et.setFocusable(false);
         et.setFocusableInTouchMode(false);
     }
 
-    //默认先关闭焦点，触摸获取焦点
+    /**
+     * 获取焦点 弹出键盘
+     * 需求场景：搜索页面，希望一进页面，就聚焦搜索框，用户可直接输入
+     */
+    public static void openFocus(final Activity activity, final EditText et) {
+        //获取焦点
+        openFocus(et);
+        //弹出软键盘「延迟显示，否则弹不出」
+        et.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                showInput(activity, et);
+            }
+        }, 1000);
+    }
+
+    /**
+     * 先关闭焦点，触摸获取焦点
+     * 需求场景：进入页面不希望输入框有焦点
+     */
     public static void focusManager(final EditText et) {
+        //先关闭焦点
         closeFocus(et);
         et.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
+                //触摸获取焦点，软键盘自动弹出
                 openFocus(et);
                 return false;
+            }
+        });
+    }
+
+
+    /**
+     * 显示键盘
+     */
+    public static void showInput(Activity activity, final EditText et) {
+        et.requestFocus();
+        InputMethodManager imm = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
+        if (imm != null) {
+            imm.showSoftInput(et, 0);
+        }
+    }
+
+    /**
+     * 隐藏键盘
+     */
+    public static void hideInput(Activity activity) {
+        InputMethodManager imm = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
+        View v = activity.getWindow().peekDecorView();
+        if (null != v) {
+            imm.hideSoftInputFromWindow(v.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+        }
+    }
+
+
+    /**
+     * 触摸软键盘外部，收起键盘
+     * 需求场景：EditText的优化体验
+     * 使用：在xml根布局中添加两个属性，抢夺EditText焦点
+     * android:clickable="true"
+     * android:focusableInTouchMode="true"
+     */
+    public static void touchHideInput(final Activity activity, EditText et) {
+        et.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (!hasFocus) {
+                    hideInput(activity);
+                }
             }
         });
     }
@@ -59,8 +127,11 @@ public class EditViewUtil {
                 String speChat = "[`~@#$%^&*()+=|{}''\\[\\].<>/@#￥%&*（）——+|{}【】‘；：”“’、？]";
                 Pattern pattern = Pattern.compile(speChat);
                 Matcher matcher = pattern.matcher(source.toString());
-                if (matcher.find()) return "";
-                else return null;
+                if (matcher.find()) {
+                    return "";
+                } else {
+                    return null;
+                }
             }
         };
         editText.setFilters(new InputFilter[]{filter});
