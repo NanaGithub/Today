@@ -10,13 +10,16 @@
  * 相同点：String,StringBuffer,StringBuilder最终底层存储与操作的都是char数组；
  * 不同点：
    * String里面的char数组是final的,而StringBuffer,StringBuilder不是。
-     也就是说,String是不可变的,想要新的字符串只能重新生成String.频繁重新生成容易生成很多垃圾；
-     而 StringBuffer和StringBuilder只需要修改底层的char数组就行.相对来说,开销要小很多.
+   
+     也就是说,String是不可变的,想要新的字符串只能重新生成String.频繁重新生成容易生成很多垃圾；而 StringBuffer和StringBuilder只需要修改底层的char数组就行.相对来说,开销要小很多.
+   
    * StringBuffer是线程安全的,StringBuilder是线程不安全的。
-     因为StringBuffer的方法是加了synchronized锁起来了的,而StringBuilder没有.
-     增删比较多时用StringBuffer或StringBuilder（注意单线程与多线程。
+     
+     因为StringBuffer的方法是加了synchronized锁起来了的,而StringBuilder没有.增删比较多时用StringBuffer或StringBuilder（注意单线程与多线程。
 
-#### void getChars(int var1, int var2, char[] var3, int var4)
+#### String方法
+
+void getChars(int var1, int var2, char[] var3, int var4)
 
 * 参数说明
  
@@ -33,11 +36,13 @@
     str.getChars(0,3,c,1);
     System.out.print(c);//1hel
 ```
-#### void getChars(char[] var1, int var2)
 
-#### char[] value = Arrays.copyOf(要copoy的数组，新生成的数组长度);「8大基本数据类型都可」
+void getChars(char[] value, int start)
+* 用于将str复制到value中start处  其最底层实现是native方法(getCharsNoCheck() )
 
-#### char[] value = Arrays.copyOfRange(char[] var0, int var1, int var2)
+char[] value = Arrays.copyOf(要copoy的数组，新生成的数组长度);「8大基本数据类型都可」
+
+char[] value = Arrays.copyOfRange(char[] var0, int var1, int var2)
 
 * 参数说明 
  
@@ -46,7 +51,7 @@
  * var2:终止位置
  * 将原数组从 开始位置 到 终止位置-1 复制，生成一个新数组
 
-####  System.arraycopy(Object var0, int var1, Object var2, int var3, int var4);
+System.arraycopy(Object var0, int var1, Object var2, int var3, int var4);
 
 * 参数说明
 
