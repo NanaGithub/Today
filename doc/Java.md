@@ -1,10 +1,14 @@
 ## JAVA学习记录
 
 ### String
+#### String、StringBuffer和StringBuilder的区别
 
-#### char[] value = Arrays.copyOf(要copoy的数组，新生成的数组长度);「8大基本数据类型都可」
+* 源码阅读推荐：[你知道String、StringBuffer和StringBuilder之间的区别吗？
+](https://mp.weixin.qq.com/s?__biz=MzA5MzI3NjE2MA==&mid=2650242977&idx=1&sn=dd2ad3a134f1336a5bf2428d42402b1f&chksm=88638ecebf1407d8c7f72981fc1faa9b87c3e9861334a57d145bd10fb1c4cb5bf763fdab8720&scene=38#wechat_redirect)
+* 结论
 
-#### getChars(int var1, int var2, char[] var3, int var4)
+
+#### void getChars(int var1, int var2, char[] var3, int var4)
 
 * 参数说明
  
@@ -21,6 +25,18 @@
     str.getChars(0,3,c,1);
     System.out.print(c);//1hel
 ```
+#### void getChars(char[] var1, int var2)
+
+#### char[] value = Arrays.copyOf(要copoy的数组，新生成的数组长度);「8大基本数据类型都可」
+
+#### char[] value = Arrays.copyOfRange(char[] var0, int var1, int var2)
+
+* 参数说明 
+ 
+ * var0:原数组
+ * var1:开始位置
+ * var2:终止位置
+ * 将原数组从 开始位置 到 终止位置-1 复制，生成一个新数组
 
 ####  System.arraycopy(Object var0, int var1, Object var2, int var3, int var4);
 
