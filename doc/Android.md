@@ -1,4 +1,6 @@
 ## Android学习记录
+###  基础
+[packageName和applicationId有什么区别](https://blog.csdn.net/u011889786/article/details/54296462)
 
 ### EditText
 #### 常用需求
@@ -14,3 +16,4 @@
   
   ```android:windowSoftInputMode="stateHidden|adjustPan"```
  
+
