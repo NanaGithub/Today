@@ -1,6 +1,13 @@
 ## Android学习记录
+* 学习思路
+  * 是什么？
+  * 为什么？
+  * 怎么做？
+  * 原理 & 封装扩展
 ###  基础
-[packageName和applicationId有什么区别](https://blog.csdn.net/u011889786/article/details/54296462)
+#### [packageName和applicationId有什么区别](https://blog.csdn.net/u011889786/article/details/54296462)
+#### DialogFragment
+  
 
 ### EditText
 #### 常用需求
