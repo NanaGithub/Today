@@ -4,9 +4,11 @@
   * 为什么？
   * 怎么做？
   * 原理 & 封装扩展
+
 目录
- * 基础
-###  基础
+ * (基础)[https://github.com/NanaGithub/Today/blob/master/doc/Android.md#%E5%9F%BA%E7%A1%80]
+
+##  基础
 #### [packageName和applicationId有什么区别](https://blog.csdn.net/u011889786/article/details/54296462)
 #### DialogFragment
   
