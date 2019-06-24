@@ -78,10 +78,12 @@ Map遍历方法示例
 ### List集合原理
 #### 源码分析
 ArrayList
- * [从源码角度彻底搞懂ArrayList](https://mp.weixin.qq.com/s?__biz=MzA5MzI3NjE2MA==&mid=2650243010&idx=1&sn=b281043006cac59266ae64638f238824&chksm=88638eadbf1407bb8734b9c0f0e4cf00252986d4268ac53201c4ad439171aaf8fccc73eddbd1&scene=38#wechat_redirect)  推荐理由：文章细致的分析了ArrayList增删改查源码方法，充分理解各个方法的底层操作流程，我们就能更好的理解ArrayList的特点。
+ * [从源码角度彻底搞懂ArrayList](https://mp.weixin.qq.com/s?__biz=MzA5MzI3NjE2MA==&mid=2650243010&idx=1&sn=b281043006cac59266ae64638f238824&chksm=88638eadbf1407bb8734b9c0f0e4cf00252986d4268ac53201c4ad439171aaf8fccc73eddbd1&scene=38#wechat_redirect)  
+ 
+   推荐理由：文章细致的分析了ArrayList增删改查源码方法，充分理解各个方法的底层操作流程，我们就能更好的理解ArrayList的特点。
  
  * 速记 ArrayList源码分析 关键点
-
+``` 
    底层是Object数组存储数据
 
    扩容机制:默认大小是10,扩容是扩容到之前的1.5倍的大小,每次扩容都是将原数组的数据复制进新数组中. 我的领悟:如果是已经知道了需要创建多少个元素,那么尽量用new ArrayList<>(13)这种明确容量的方式创建ArrayList.避免不必要的浪费.
@@ -90,8 +92,8 @@ ArrayList
 
    删除:如果是删除数组指定位置的元素,那么可能会挪动大量的数组元素;如果是删除末尾元素的话,那么代价是最小的. ArrayList里面的删除元素,其实是将该元素置为null「list在指定位置添加某个元素时不是覆盖而是插入，原位置对象后移」.
 
-  查询和改某个位置的元素是非常快的( O(1) ). 
-
+   查询和改某个位置的元素是非常快的( O(1) ). 
+```
 #### 速记结论：
 
 List(有序,不唯一)的三个儿子的特点 
