@@ -14,3 +14,63 @@
   * 数组和集合什么时候用？
       * 如果元素个数是固定的推荐用数组
       * 如果元素个数不是固定的推荐用集合
+      
+### 集合元素遍历实例
+List & Set 遍历方法示例
+
+```
+    //方法一增强for语句
+    public static void method1(ArrayList<Student> list){
+        for(Student s:list){
+            System.out.print(s);
+        }
+
+    }
+    //方法二：List独有的
+    public static void method2(ArrayList<Student> list){
+        for(int i = 0;i < list.size();i++){
+            System.out.print( list.get(i) + " ");
+        }
+
+    }
+    //方法三：迭代器
+    public static void method3(ArrayList<Student> list){
+        Iterator<Student>it = list.iterator();
+        while(it.hasNext()){
+            Student stu = it.next();
+            System.out.println(stu);
+        }
+    }
+```
+Map遍历方法示例
+
+```
+        //方法一：Map集合中所有的键构成keySet
+        Set<String> set = map.keySet();
+        Iterator<String> it = set.iterator();
+        while(it.hasNext()){
+            String key = it.next();
+            //根据key获取map集合中的value
+            String value = map.get(key);
+            syso(key + "--->" + value);
+        }
+
+        //方法二：Map集合中一个键、值构成Entry,多个键值对的形式构成Set
+        Set<Map.Entry<String,String>> set = map.entrySet();
+        Iterator<Map.Entry<String,String>> it = set.iterator();
+        while(it.hasNext()){
+            Map.Entry<String,String> entry = it.next();
+            String key = entry.getKey();
+            String value = entry.getValue();
+            syso(key + "--->" + value);
+        }
+
+        //方法三:Map集合中所有的值构成Collection
+        Collection<String> c = map.values();
+        Iterator<String> it = c.iterator();
+        while(it.hasNext()){
+            String value = it.next();
+            syso(value);
+        }
+
+```
