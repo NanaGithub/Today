@@ -77,7 +77,8 @@ Map遍历方法示例
 
 ### List集合原理
 #### 源码分析
- * [从源码角度彻底搞懂ArrayList](https://mp.weixin.qq.com/s?__biz=MzA5MzI3NjE2MA==&mid=2650243010&idx=1&sn=b281043006cac59266ae64638f238824&chksm=88638eadbf1407bb8734b9c0f0e4cf00252986d4268ac53201c4ad439171aaf8fccc73eddbd1&scene=38#wechat_redirect) 
+ * [从源码角度彻底搞懂ArrayList](https://mp.weixin.qq.com/s?__biz=MzA5MzI3NjE2MA==&mid=2650243010&idx=1&sn=b281043006cac59266ae64638f238824&chksm=88638eadbf1407bb8734b9c0f0e4cf00252986d4268ac53201c4ad439171aaf8fccc73eddbd1&scene=38#wechat_redirect)  推荐理由：文章细致的分析了ArrayList增删改查源码方法，充分理解各个方法的底层操作流程，我们就能更好的理解ArrayList的特点。
+ 
 #### 速记结论：
 
 List(有序,不唯一)的三个儿子的特点 
