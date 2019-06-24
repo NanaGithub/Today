@@ -15,47 +15,6 @@
       * 如果元素个数是固定的推荐用数组
       * 如果元素个数不是固定的推荐用集合
 
-### 原理
-源码分析
-
-速记结论：
-
-List(有序,不唯一)的三个儿子的特点 
-   
-ArrayList:
-
-   底层数据结构是数组，查询快，增删慢。线程不安全，效率高。
-
-Vector:
-
-   底层数据结构是数组，查询快，增删慢。线程安全，效率低。
-
-LinkedList:
-
-   底层数据结构是链表，查询慢，增删快。线程不安全，效率高。
-
-Vector和ArrayList的区别
-    
-   * Vector相对ArrayList查询慢(线程安全的)
-
-   * Vector相对LinkedList增删慢(数组结构)
-
-   * Vector是线程安全的,效率低
-
-   * ArrayList是线程不安全的,效率高
-
-   * 共同点:都是数组实现的
-
-ArrayList和LinkedList的区别
-    
-   * 不同点：
-      
-      ArrayList底层是数组结构,可以根据索引访问，速度快,适用于查找；插入删除时，前后位置都要改变，速度慢。
-
-      LinkedList底层是链表结构的,适用于插入删除，直接断开前后箭头，速度快。
-
-   * 共同点:都是线程不安全的
-
 ### 集合元素遍历实例
 List & Set 遍历方法示例
 
@@ -115,3 +74,39 @@ Map遍历方法示例
         }
 
 ```
+
+### List集合原理
+#### 源码分析
+ * [从源码角度彻底搞懂ArrayList](https://mp.weixin.qq.com/s?__biz=MzA5MzI3NjE2MA==&mid=2650243010&idx=1&sn=b281043006cac59266ae64638f238824&chksm=88638eadbf1407bb8734b9c0f0e4cf00252986d4268ac53201c4ad439171aaf8fccc73eddbd1&scene=38#wechat_redirect) 
+#### 速记结论：
+
+List(有序,不唯一)的三个儿子的特点 
+   
+  * ArrayList：底层数据结构是数组，查询快，增删慢。线程不安全，效率高。
+
+  * Vector：底层数据结构是数组，查询快，增删慢。线程安全，效率低。
+
+  * LinkedList：底层数据结构是链表，查询慢，增删快。线程不安全，效率高。
+
+Vector和ArrayList的区别
+    
+   * Vector相对ArrayList查询慢(线程安全的)
+
+   * Vector相对LinkedList增删慢(数组结构)
+
+   * Vector是线程安全的,效率低
+
+   * ArrayList是线程不安全的,效率高
+
+   * 共同点:都是数组实现的
+
+ArrayList和LinkedList的区别
+    
+   * 不同点：
+      
+      ArrayList底层是数组结构,可以根据索引访问，速度快,适用于查找；插入删除时，前后位置都要改变，速度慢。
+
+      LinkedList底层是链表结构的,适用于插入删除，直接断开前后箭头，速度快。
+
+   * 共同点:都是线程不安全的
+
