@@ -1,6 +1,5 @@
 
-
-[](https://upload-images.jianshu.io/upload_images/3804905-c471a31ab5cc8c28.png?imageMogr2/auto-orient/)
+https://www.jianshu.com/p/2db05dbcba2d
 ```
     //序列化id
     private static final long serialVersionUID = 362498820763181265L;
@@ -25,3 +24,6 @@
     //负载因子
     final float loadFactor;
 ```
+
+啊 实在看不懂
+https://mp.weixin.qq.com/s/SHJzWpZ0MscuJhPLRwWQxg
