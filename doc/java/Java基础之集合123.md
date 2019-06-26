@@ -125,7 +125,11 @@ LinkedList
 
    删除也是非常快,只需要改动一下指针就行了,代价很小.
    ```
-
+HashSet/LinkedSet
+ * [Java类集框架 —— HashSet、LinkedHashSet源码分析
+](https://juejin.im/post/59c4df0d6fb9a00a4c271113)
+ * HashSet底层是HashMap，LinkedHashMSet底层是LinkedHashMap。
+ 
 ### 集合对比「面试速记」
 
 List(有序,不唯一)的三个实现类的特点 
