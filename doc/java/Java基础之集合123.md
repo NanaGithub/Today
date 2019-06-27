@@ -130,6 +130,9 @@ HashSet/LinkedSet
 ](https://juejin.im/post/59c4df0d6fb9a00a4c271113)
  * HashSet底层是HashMap，LinkedHashMSet底层是LinkedHashMap。
  
+HashMap
+ * [HashMap源码分析](doc/java/HashMap源码分析.md)
+ 
 ### 集合对比「面试速记」
 
 List(有序,不唯一)的三个实现类的特点 
