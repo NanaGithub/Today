@@ -30,5 +30,10 @@
 * 键盘弹出时，底部tab被顶起
   
   ```android:windowSoftInputMode="stateHidden|adjustPan"```
+  
+
+## 其他问题记录
+
+[Android开发截屏截图方法汇总（Activity、View、ScrollView、ListView、RecyclerView、WebView截屏截图）](https://www.jianshu.com/p/81c413a3692f)
  
 
