@@ -1,5 +1,15 @@
 哈希表
-https://www.jianshu.com/p/2db05dbcba2d
+（https://www.jianshu.com/p/2db05dbcba2d
+
+### HashMap源码分析思路
+阅读许多篇文章后，觉得这样的思路，更加容易读进去
+ * 大体思路（文字）
+ * 预备知识
+ * 整段代码逻辑分析
+ * 细节代码分析
+
+### 源码分析
+
 ```
     //序列化id
     private static final long serialVersionUID = 362498820763181265L;
@@ -25,5 +35,5 @@ https://www.jianshu.com/p/2db05dbcba2d
     final float loadFactor;
 ```
 
+推荐 [面试必问的HashMap，你真的了解吗?]（https://mp.weixin.qq.com/s/SHJzWpZ0MscuJhPLRwWQxg）
 啊 实在看不懂
-https://mp.weixin.qq.com/s/SHJzWpZ0MscuJhPLRwWQxg
