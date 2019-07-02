@@ -1,15 +1,4 @@
-## Android学习记录
-学习思路
-  * 是什么？
-  * 为什么？
-  * 怎么做？
-  * 原理 & 封装扩展
-
-目录
- * [基础](https://github.com/NanaGithub/Today/blob/master/doc/Android.md#%E5%9F%BA%E7%A1%80)
-
 ##  基础
-#### [packageName和applicationId有什么区别](https://blog.csdn.net/u011889786/article/details/54296462)
 #### DialogFragment
 
 [Android 官方推荐 : DialogFragment 创建对话框](https://blog.csdn.net/lmj623565791/article/details/37815413)
@@ -32,8 +21,4 @@
   ```android:windowSoftInputMode="stateHidden|adjustPan"```
   
 
-## 其他问题记录
-
-[Android开发截屏截图方法汇总（Activity、View、ScrollView、ListView、RecyclerView、WebView截屏截图）](https://www.jianshu.com/p/81c413a3692f)
- 
 

@@ -1,6 +1,5 @@
-## JAVA学习记录
+## String相关知识
 
-### String
 #### String、StringBuffer和StringBuilder的区别
 
 源码阅读推荐：[你知道String、StringBuffer和StringBuilder之间的区别吗？
