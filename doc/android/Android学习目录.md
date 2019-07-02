@@ -20,6 +20,10 @@
 
 ## 框架
 
+* 多线程
+
+    [这是一份全面 & 详细的Android多线程知识总结指南](https://juejin.im/post/5d12c1c66fb9a07ee30e2821#heading-4)
+
 * 网络框架
 
     [这是一份很详细的 Retrofit 2.0 使用教程（含实例讲解）](https://blog.csdn.net/carson_ho/article/details/73732076)
