@@ -1,17 +1,19 @@
 ## Android学习指南
-* 序言
+
+序言
 
 这篇文章旨在记录Android学习的路线并收录优秀的学习文章。
 
-* 学习思路
-    * 是什么？
-    * 为什么？
-    * 怎么做？
-    * 原理 & 封装扩展
+学习思路
+
+ * 是什么？
+ * 为什么？
+ * 怎么做？
+ * 原理 & 封装扩展
     
-### 基础知识
-## UI
-#### DialogFragment
+## 基础知识
+### UI
+* DialogFragment
 
 [Android 官方推荐 : DialogFragment 创建对话框](https://blog.csdn.net/lmj623565791/article/details/37815413)
 
@@ -20,7 +22,11 @@
 
 ## 框架
 
+* 网络框架
 
+[这是一份很详细的 Retrofit 2.0 使用教程（含实例讲解）](https://blog.csdn.net/carson_ho/article/details/73732076)
+
+[Android：手把手带你深入剖析 Retrofit 2.0 源码](https://blog.csdn.net/carson_ho/article/details/73732115)
 
 
 
