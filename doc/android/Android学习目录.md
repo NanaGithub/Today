@@ -8,6 +8,9 @@
  * 为什么？
  * 怎么做？
  * 原理 & 封装扩展
+
+阅读源码心路：
+ * 跟着别的文章分析，自己思考较少，疑问不多；
     
 ## 基础知识
 ### UI
@@ -22,7 +25,7 @@
 
 * 多线程
 
-    [这是一份全面 & 详细的Android多线程知识总结指南](https://juejin.im/post/5d12c1c66fb9a07ee30e2821#heading-4)
+    [这是一份全面 & 详细的Android多线程知识总结指南](https://juejin.im/post/5d12c1c66fb9a07ee30e2821#heading-0)
 
 * 网络框架
 
