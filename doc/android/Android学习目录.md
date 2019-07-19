@@ -8,6 +8,14 @@
  * 为什么？
  * 怎么做？
  * 原理 & 封装扩展
+
+阅读源码思路：
+ * 跟着别的文章分析，自己思考较少，疑问不多；
+ * 从操作步骤入手，逐个分析；
+ * 看一遍很快就忘了，还需要多实践来加深记忆；
+ 
+ 
+ 
     
 ## 基础知识
 ### UI
@@ -18,7 +26,11 @@
     [Android 撸起袖子，自己封装 DialogFragment
     ](https://mp.weixin.qq.com/s?__biz=MzIxNzU1Nzk3OQ==&mid=2247484330&idx=1&sn=b1b4f88041520fa01685a8ca3885ff7e&chksm=97f6bd1ea08134088d28281021cb210d636546057fbf2f5100d6c98a695d67aa20b7bc7237d7&scene=38#wechat_redirect)
 
-## 框架
+### 框架
+
+* 多线程
+     
+    [这是一份全面 & 详细的Android多线程知识总结指南](https://juejin.im/post/5d12c1c66fb9a07ee30e2821)「基础+原理真的很全，读这一篇就够了」
 
 * 网络框架
 
