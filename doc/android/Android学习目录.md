@@ -28,7 +28,8 @@
 
 * ConstraintLayout
 
-https://juejin.im/post/5bac92f2f265da0aba70c1bf#heading-7
+ [约束布局ConstraintLayout看这一篇就够了
+](https://juejin.im/post/5bac92f2f265da0aba70c1bf#heading-7)
 
 ### 框架
 
