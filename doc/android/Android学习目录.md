@@ -18,11 +18,11 @@
 ## 基础知识
 * [关闭activity方案](https://juejin.im/post/5ca1844151882543e31e27fa)「[备份](http://note.youdao.com/noteshare?id=3c9676a963dac1d18d506141b98d91d6)」
 
-* [Android TaskAffinity实践详解](http://note.youdao.com/noteshare?id=7d85b73894cb7c4c4dbd8eb0c5ba85b2)
+* [Android TaskAffinity实践详解](https://juejin.im/post/5935081d2f301e006b09cb9e)「[备份](http://note.youdao.com/noteshare?id=7d85b73894cb7c4c4dbd8eb0c5ba85b2)」
 
-* [理解Java的强引用、软引用、弱引用和虚引用](http://note.youdao.com/noteshare?id=e4182464a8306ef5a542539bcebb0c60)
+* [理解Java的强引用、软引用、弱引用和虚引用](https://juejin.im/post/5b82c02df265da436152f5ad)「[备份](http://note.youdao.com/noteshare?id=e4182464a8306ef5a542539bcebb0c60)」
 
-* [约束布局ConstraintLayout看这一篇就够了](http://note.youdao.com/noteshare?id=e4182464a8306ef5a542539bcebb0c60)
+* [约束布局ConstraintLayout看这一篇就够了](https://juejin.im/post/5bac92f2f265da0aba70c1bf)「[备份](http://note.youdao.com/noteshare?id=e4182464a8306ef5a542539bcebb0c60)」
 
 
 * DialogFragment
