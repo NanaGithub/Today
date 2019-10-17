@@ -16,7 +16,7 @@
  
   
 ## 基础知识
-* [关闭activity方案](http://note.youdao.com/noteshare?id=3c9676a963dac1d18d506141b98d91d6)
+* [关闭activity方案](https://juejin.im/post/5ca1844151882543e31e27fa)「[备份](http://note.youdao.com/noteshare?id=3c9676a963dac1d18d506141b98d91d6)」
 
 * [Android TaskAffinity实践详解](http://note.youdao.com/noteshare?id=7d85b73894cb7c4c4dbd8eb0c5ba85b2)
 
