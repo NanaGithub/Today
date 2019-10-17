@@ -22,7 +22,7 @@
 
 * [理解Java的强引用、软引用、弱引用和虚引用](https://juejin.im/post/5b82c02df265da436152f5ad)「[备份](http://note.youdao.com/noteshare?id=e4182464a8306ef5a542539bcebb0c60)」
 
-* [约束布局ConstraintLayout看这一篇就够了](https://juejin.im/post/5bac92f2f265da0aba70c1bf)「[备份](http://note.youdao.com/noteshare?id=e4182464a8306ef5a542539bcebb0c60)」
+* [约束布局ConstraintLayout看这一篇就够了](https://juejin.im/post/5bac92f2f265da0aba70c1bf)「[备份](https://note.youdao.com/ynoteshare1/index.html?id=80006721af869b3708abb67a645e5b30&type=note)」
 
 
 * DialogFragment
