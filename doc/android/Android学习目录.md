@@ -14,11 +14,17 @@
  * 从操作步骤入手，逐个分析；
  * 看一遍很快就忘了，还需要多实践来加深记忆；
  
- 
- 
-    
+  
 ## 基础知识
-### UI
+* [关闭activity方案](http://note.youdao.com/noteshare?id=3c9676a963dac1d18d506141b98d91d6)
+
+* [Android TaskAffinity实践详解](http://note.youdao.com/noteshare?id=7d85b73894cb7c4c4dbd8eb0c5ba85b2)
+
+* [理解Java的强引用、软引用、弱引用和虚引用](http://note.youdao.com/noteshare?id=e4182464a8306ef5a542539bcebb0c60)
+
+* [约束布局ConstraintLayout看这一篇就够了](http://note.youdao.com/noteshare?id=e4182464a8306ef5a542539bcebb0c60)
+
+
 * DialogFragment
 
     [Android 官方推荐 : DialogFragment 创建对话框](https://blog.csdn.net/lmj623565791/article/details/37815413)
@@ -26,12 +32,6 @@
     [Android 撸起袖子，自己封装 DialogFragment
     ](https://mp.weixin.qq.com/s?__biz=MzIxNzU1Nzk3OQ==&mid=2247484330&idx=1&sn=b1b4f88041520fa01685a8ca3885ff7e&chksm=97f6bd1ea08134088d28281021cb210d636546057fbf2f5100d6c98a695d67aa20b7bc7237d7&scene=38#wechat_redirect)
 
-* ConstraintLayout
-
- [约束布局ConstraintLayout看这一篇就够了
-](https://juejin.im/post/5bac92f2f265da0aba70c1bf#heading-7)
-
-### 框架
 
 * 多线程
      
@@ -42,8 +42,6 @@
     [这是一份很详细的 Retrofit 2.0 使用教程（含实例讲解）](https://blog.csdn.net/carson_ho/article/details/73732076)
 
     [Android：手把手带你深入剖析 Retrofit 2.0 源码](https://blog.csdn.net/carson_ho/article/details/73732115)
-
-
 
 ### 扩展知识
 
