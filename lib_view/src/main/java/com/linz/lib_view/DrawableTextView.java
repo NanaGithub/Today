@@ -9,7 +9,6 @@ import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 
 /**
- * Created by 牛栋 on 2018/5/13.
  * 需求场景：
  * 1.使用TextView设置图片时，需求设置图片大小;
  * 2.TextView设置宽高，使图片和文字居中。

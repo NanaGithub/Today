@@ -1,38 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".service.ServiceActivity">
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RxJava中常见的几种Subject" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="start"
-        android:text="start service" />
+        android:onClick="behaviorSubject"
+        android:text="BehaviorSubject" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="close"
-        android:text="stop service" />
+        android:onClick="asyncSubject"
+        android:text="AsyncSubject" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="bind"
-        android:text="bind service" />
+        android:onClick="publishSubject"
+        android:text="PublishSubject" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="unbind"
-        android:text="unbind service" />
+        android:onClick="replaySubject"
+        android:text="ReplaySubject" />
 
-    <Button
+    <TextView
+        android:id="@+id/tv_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="开启 Intent Service"
-        android:onClick="testIntentService"/>
+        android:text="" />
+
 </LinearLayout>

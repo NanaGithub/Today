@@ -1,17 +1,15 @@
 apply plugin: 'com.android.library'
-
 android {
-    compileSdkVersion rootProject.ext.moudle.compileSdkVersion
-    buildToolsVersion '28.0.3'
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
     defaultConfig {
-        minSdkVersion rootProject.ext.moudle.minSdkVersion
-        targetSdkVersion rootProject.ext.moudle.targetSdkVersion
-        versionCode rootProject.ext.moudle.versionCode
-        versionName rootProject.ext.moudle.versionName
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [ moduleName : project.getName() ]
+                arguments = [moduleName: project.getName()]
             }
         }
     }
@@ -22,20 +20,25 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation rootProject.ext.deps.appcompat
-
-    //网络请求框架 retrofit+okHttp
-    api 'com.squareup.retrofit2:retrofit:2.4.0'
-    api 'com.squareup.retrofit2:converter-gson:2.4.0'
-    api 'com.squareup.okhttp3:logging-interceptor:3.9.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-
-    api 'com.alibaba:arouter-api:1.3.1'
-    // arouter-compiler 的注解依赖需要所有使用 ARouter 的 module 都添加依赖
-    annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //基础包
+    api rootProject.ext.deps.appcompat
+    api rootProject.ext.deps.v4
+    api rootProject.ext.deps.design
+    api rootProject.ext.deps.constraint_layout
+    api rootProject.ext.deps.recyclerview
+    api rootProject.ext.deps.gson
+    //retrofit+okHttp
+    api rootProject.ext.deps.retrofit2
+    api rootProject.ext.deps.retrofit2_converter_gson
+    api rootProject.ext.deps.okhttp3_logging_interceptor
+    //RxJava
+    api rootProject.ext.deps.rxjava
+    api rootProject.ext.deps.rxandroid
+    api rootProject.ext.deps.alibaba_arouter
+    //arouter-compiler 的注解依赖需要所有使用 ARouter 的 module 都添加依赖
+    annotationProcessor rootProject.ext.deps.arouter_compiler
 }

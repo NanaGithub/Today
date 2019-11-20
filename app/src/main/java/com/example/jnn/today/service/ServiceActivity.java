@@ -1,13 +1,12 @@
 package com.example.jnn.today.service;
 
-import android.app.Service;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
@@ -69,6 +68,7 @@ public class ServiceActivity extends AppCompatActivity {
         unbindService(bindServiceConnection);
     }
 
+
     class MyServiceConnection implements ServiceConnection {
         private final String TAG = MyServiceConnection.class.getSimpleName();
 
@@ -83,5 +83,22 @@ public class ServiceActivity extends AppCompatActivity {
         public void onServiceDisconnected(ComponentName name) {
             Log.e(TAG, "onServiceDisconnected");
         }
+    }
+
+
+    /**
+     * IntentService测试
+     */
+    public void testIntentService(View view) {
+        Intent intent = new Intent(ServiceActivity.this, MyIntentService.class);
+        intent.putExtra("type", 1);
+        startService(intent);
+
+        Intent intent2 = new Intent(ServiceActivity.this, MyIntentService.class);
+        intent2.putExtra("type", 2);
+        startService(intent2);
+
+        //再次开启1
+        startService(intent);
     }
 }

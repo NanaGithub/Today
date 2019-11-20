@@ -15,6 +15,7 @@
 
         <!-- 服务 -->
         <service android:name=".service.MyLocalService" />
+        <service android:name=".service.MyIntentService" />
 
         <activity
             android:name=".service.ServiceActivity"
@@ -26,11 +27,7 @@
         <!-- activity -->
         <activity android:name=".activity.BActivity" />
         <activity android:name=".activity.AActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".sqlite.SQLiteActivity">
 
@@ -50,6 +47,20 @@
         <activity
             android:name=".view.ViewActivity"
             android:exported="true" />
+        <activity
+            android:name=".thread.ThreadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".retrofit.RxjavaActivity"
+            android:exported="true" />
+        <activity android:name=".ToadyActivity" />
+        <activity android:name=".recycler_view.RecyclerViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
