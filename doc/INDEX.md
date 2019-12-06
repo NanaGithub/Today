@@ -10,6 +10,7 @@
 ### 辅助工具
 1.  谷歌浏览器（记录常用网站等）
 2.  有道云笔记，有道云词典
+3.  Sublime Text（http://www.sublimetext.cn/）
 
 ### 交流工具
 1.  QQ
