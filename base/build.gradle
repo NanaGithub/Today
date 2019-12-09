@@ -29,8 +29,13 @@ dependencies {
     api rootProject.ext.deps.v4
     api rootProject.ext.deps.design
     api rootProject.ext.deps.constraint_layout
+    //UI
     api rootProject.ext.deps.recyclerview
+    api rootProject.ext.deps.flexbox
+    //数据
     api rootProject.ext.deps.gson
+    api rootProject.ext.deps.butterknife
+    annotationProcessor rootProject.ext.deps.butterknife_compiler
     //retrofit+okHttp
     api rootProject.ext.deps.retrofit2
     api rootProject.ext.deps.retrofit2_converter_gson
@@ -38,6 +43,7 @@ dependencies {
     //RxJava
     api rootProject.ext.deps.rxjava
     api rootProject.ext.deps.rxandroid
+    //架构
     api rootProject.ext.deps.alibaba_arouter
     //arouter-compiler 的注解依赖需要所有使用 ARouter 的 module 都添加依赖
     annotationProcessor rootProject.ext.deps.arouter_compiler

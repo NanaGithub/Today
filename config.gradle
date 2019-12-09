@@ -21,6 +21,7 @@ ext {
             "eventbus"         : "3.1.1",
             "fastjson"         : "1.2.57",
             "gson"             : "2.8.6",
+            "butterknife"      : "10.2.0"
     ]
 
     //所有依赖Map集合
@@ -48,6 +49,8 @@ ext {
             /*数据解析*/
             "fastjson"                     : "com.alibaba:fastjson:$depsVerison.fastjson",
             "gson"                         : "com.google.code.gson:gson:$depsVerison.gson",
+            "butterknife"                  : "com.jakewharton:butterknife:$depsVerison.butterknife",
+            "butterknife_compiler"         : "com.jakewharton:butterknife-compiler:$depsVerison.butterknife",//annotationProcessor
 
             /*UI*/
             "flexbox"                      : "com.google.android:flexbox:1.1.0",//谷歌FlexBoxLayout布局
